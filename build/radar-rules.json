@@ -773,6 +773,15 @@
           "/"
         ],
         "target": "/36kr/search/newsflashes/:keyword"
+      },
+      {
+        "title": "资讯热榜",
+        "docs": "https://docs.rsshub.app/new-media.html#_36kr-zi-xun-re-bang",
+        "source": [
+          "/hot-list/:category",
+          "/"
+        ],
+        "target": "/36kr/hot-list/:category"
       }
     ]
   },
@@ -5303,6 +5312,19 @@
       }
     ]
   },
+  "curiouscat.live": {
+    "_name": "CuriousCat",
+    ".": [
+      {
+        "title": "User",
+        "docs": "https://docs.rsshub.app/en/social-media.html#curiouscat",
+        "source": [
+          "/:id"
+        ],
+        "target": "/curiouscat/user/:id"
+      }
+    ]
+  },
   "curius.app": {
     "_name": "Curius",
     ".": [
@@ -8596,6 +8618,19 @@
       }
     ]
   },
+  "chinatax.gov.cn": {
+    "_name": "国家税务总局",
+    "www": [
+      {
+        "title": "国家税务总局 - 最新文件",
+        "docs": "https://docs.rsshub.app/government.html#guo-jia-shui-wu-zong-ju",
+        "source": [
+          "/*"
+        ],
+        "target": "/gov/chinatax/latest"
+      }
+    ]
+  },
   "cmse.gov.cn": {
     "_name": "中国载人航天",
     "www": [
@@ -10081,6 +10116,28 @@
       }
     ]
   },
+  "hinatazaka46.com": {
+    "_name": "日向坂46",
+    ".": [
+      {
+        "title": "公式ブログ",
+        "docs": "https://docs.rsshub.app/new-media.html#ban-dao-xi-lie-guan-wang-zi-xun-ri-xiang-ban-46-bo-ke",
+        "source": [
+          "/s/official/diary/member/list",
+          "/"
+        ]
+      },
+      {
+        "title": "ニュース",
+        "docs": "https://docs.rsshub.app/new-media.html#ban-dao-xi-lie-guan-wang-zi-xun-ri-xiang-ban-46-xin-wen",
+        "source": [
+          "/s/official/news/list",
+          "/"
+        ],
+        "target": "/hinatazaka46/news"
+      }
+    ]
+  },
   "hit.edu.cn": {
     "_name": "哈尔滨工业大学",
     "jwc": [
@@ -10931,16 +10988,30 @@
   },
   "ifeng.com": {
     "_name": "凤凰网",
-    ".": [
+    "feng": [
       {
         "title": "大风号",
-        "docs": "https://docs.rsshub.app/new-media.html#feng-huang-wang"
+        "docs": "https://docs.rsshub.app/new-media.html#feng-huang-wang",
+        "source": [
+          "/author/:id"
+        ],
+        "target": "/ifeng/feng/:id/doc"
       }
     ],
     "news": [
       {
         "title": "资讯",
         "docs": "https://docs.rsshub.app/new-media.html#feng-huang-wang-zi-xun"
+      }
+    ],
+    "ishare": [
+      {
+        "title": "大风号",
+        "docs": "https://docs.rsshub.app/new-media.html#feng-huang-wang",
+        "source": [
+          "/mediaShare/home/:id/media"
+        ],
+        "target": "/ifeng/feng/:id/doc"
       }
     ]
   },
@@ -18282,6 +18353,20 @@
       }
     ]
   },
+  "radiofrance.fr": {
+    "_name": "Radio France",
+    "www": [
+      {
+        "title": "Géopolitique",
+        "docs": "https://docs.rsshub.app/traditional-media.html#fa-guo-guang-bo-dian-tai",
+        "source": [
+          "/franceinter/podcasts/geopolitique",
+          "/"
+        ],
+        "target": "/radiofrance/geopolitique"
+      }
+    ]
+  },
   "rarehistoricalphotos.com": {
     "_name": "Rare Historical Photos",
     ".": [
@@ -21063,6 +21148,20 @@
         "docs": "https://docs.rsshub.app/traditional-media.html#tai-wan-ying-wen-xin-wen",
         "source": "/:lang/index",
         "target": "/taiwannews/hot/:lang"
+      }
+    ]
+  },
+  "tangshufang.com": {
+    "_name": "唐书房",
+    ".": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/new-media.html#tang-shu-fang-fen-lei",
+        "source": [
+          "/:category",
+          "/"
+        ],
+        "target": "/tangshufang/:category?"
       }
     ]
   },
@@ -24491,6 +24590,11 @@
         "docs": "https://docs.rsshub.app/social-media.html#youtube",
         "source": "/user/:username",
         "target": "/youtube/user/:username"
+      },
+      {
+        "title": "用户",
+        "docs": "https://docs.rsshub.app/social-media.html#youtube",
+        "source": "/:handle"
       },
       {
         "title": "频道",
